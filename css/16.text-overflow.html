@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text overflow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+
+        .box{
+            font-size: 20px;
+            width: 200px;
+            margin: 0 20px;
+            background-color: #afe;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .dbox{
+            display:-webkit-box;
+            -webkit-line-clamp:4;
+            -webkit-box-orient:vertical;
+            white-space: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ex! Sint dolore, sit nostrum eum delectus obcaecati doloribus, ipsa omnis doloremque perspiciatis consequatur in? Ullam voluptas vitae nobis doloremque dolores.</div>
+        <div class="box">Sapiente aperiam facilis, numquam modi, exercitationem iste dolorem asperiores voluptatibus dolorum quasi id expedita. Consectetur alias velit, veniam repudiandae nesciunt ipsa et facilis fuga voluptas sit, eligendi minus, soluta minima.</div>
+        <div class="box dbox">Debitis eos deserunt aut atque temporibus non, ea voluptatem maxime autem eum suscipit sapiente iure asperiores nam labore provident delectus adipisci eaque officia minus id tempore quidem magnam quasi? Recusandae?</div>
+
+    </div>
+    
+</body>
+</html>

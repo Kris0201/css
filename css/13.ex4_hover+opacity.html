@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4 hover+opacity</title>
+    <style>
+        .background{
+            position: relative;
+            height: 600px;
+            background:url('./images/Muse\ du\ Louvre.jpg') center center no-repeat;
+            transition:.8s;
+        }
+
+        .background:hover{
+            opacity: .7;
+            /*color:white的設定h1無法繼承，因為h1有另外給定grey，所以不理父*/
+        }
+
+        h1{
+            color:grey;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            /*因為position:absolute後h1會失去佔據整行，只剩內容寬度，無法
+            使用text-align:center，故width設100%是使之享有父層寬度，就可再使用text-align*/
+            transition:.8s;
+        }
+
+       
+        .background:hover h1{
+            color: white;          
+        }
+
+        /*注意「繼承」的概念：*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <h1>Paris</h1>  
+        </div>
+    </div>
+</body>
+</html>

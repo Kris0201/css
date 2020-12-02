@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background image</title>
+    <style>
+        .map{
+            width: 800px;
+            height: 450px;
+            background: url('./images/map1.jpg');
+            margin: 0 auto;
+            
+        }
+
+        .map:hover{
+            /* width: 30px;
+            height: 30px; */
+            background: url('./images/1.png') center center no-repeat, url('./images/2.png') center top no-repeat, url('./images/3.png') center left no-repeat, url('./images/map1.jpg');
+            /*圖片的順序是前蓋後，比地圖小的圖要先寫，才能出現在地圖上*/
+            background-size: 10%, 10%, 10%, auto;
+            /*此處參數順序按background圖片順序調整*/
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="map"></div>
+</body>
+</html>

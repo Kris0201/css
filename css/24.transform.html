@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #aff;
+            transition: .6s;
+            margin: 10px;
+        }
+
+        .trans:hover{
+            background-color:burlywood;
+            transform:translate(60px, 80px);
+            
+        }
+
+        .trans_r:hover{
+            background-color:rgb(135, 155, 222);
+            transform:rotate(30deg);
+        }
+        .trans_scale:hover{
+            background-color:rgb(241, 112, 151);
+            transform:scaleX(2);
+        }
+        .trans_skew:hover{
+            background-color:rgb(135, 222, 171);
+            transform: skewX(60deg);
+        }
+
+        .trans_mix1:hover{
+            background-color:rgb(199, 4, 238);
+            transform: translateX(100px) rotate(360deg);
+        }
+
+        .trans_mix2:hover{
+            background-color:rgb(203, 238, 4);
+            transform:rotate(360deg) translateX(100px);
+        }
+
+        .trans_ori{ /*旋轉中心偏移*/
+            background-color:black;
+            transform-origin:30px 60px;
+        }
+
+        .trans_ori:hover{
+            background-color:crimson;
+            transform:rotate(60deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box trans"></div>
+    <div class="box trans_r"></div>
+    <div class="box trans_scale"></div>
+    <div class="box trans_skew"></div>
+    <div class="box trans_mix1"></div>
+    <div class="box trans_mix2"></div>
+    <div class="box trans_ori"></div>
+</body>
+</html>

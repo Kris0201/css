@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip path</title>
+    <style>
+        img{
+            clip-path: circle(50% at 50% 20%);
+        }
+        .flowers{
+            clip-path:ellipse(25% 50% at 50% 50%);
+
+        }
+        .cross{
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            overflow: hidden;
+        }
+        .cross img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./images/ex1_pic1.jpg" alt="">
+    <img class="flowers" src="./images/flowers.jpg" alt="">
+    <div class="cross">
+        <img src="./images/flowers.jpg" alt="">
+    </div>
+    
+</body>
+</html>

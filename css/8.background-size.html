@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background size</title>
+    <style>
+        .city{
+            max-width: 800px;
+            height: 300px;
+            background: url('./images/city.jpg');
+            background-size: auto 200px;
+            background-repeat: no-repeat;
+            margin: 10px;
+        }
+
+        .contain{
+            background-size: contain;
+            /*維持原圖比例，但沒辦法填滿容器寬度*/
+            background-color:plum;
+            
+        }
+
+        .cover{
+            background-size: cover;
+            /*最常用，可以填滿容器寬度且維持原圖比例*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="city"></div>
+    <div class="city contain"></div>
+    <div class="city cover"></div>
+</body>
+</html>

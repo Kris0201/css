@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <style>
+        .background-origin{
+            width: 1200px;
+            height: 800px;
+            background:url('./images/cat-5414737_1280.jpg');
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+
+        h1.origin{
+            line-height: 2.4;
+            text-align: center;
+            background-color:rgba(255,255,255,.6);
+            padding: 6px 0;
+            /*padding上下6px的目的是露出bg圖片*/
+
+        }
+        .background{
+            width: 1200px;
+            height: 800px;
+            background:url('./images/cat-5414737_1280.jpg');
+            background-size: cover;
+        }
+
+        h1{
+            line-height: 2.4;
+            text-align: center;
+            background-color:rgba(255,255,255,.6);
+            background-clip: content-box; 
+            /*設定背景顏色的裁切從content-box開始*/
+            padding: 6px 0;
+            /*padding上下6px的目的是露出bg圖片*/
+            border-top: 10px solid rgba(255,255,255,.6);
+            border-bottom: 10px solid rgba(255,255,255,.6);
+            /*border-top/bottom顏色設置與content-box顏色一樣，做出框出效果*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-origin">
+        <h1 class="origin">貓為什麼呼嚕？</h1>
+    </div>
+    <div class="background">
+        <h1>貓為什麼呼嚕？</h1>
+    </div>
+</body>
+</html>

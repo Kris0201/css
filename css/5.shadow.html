@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: #afa;
+            float: left;
+            margin: 10px;
+            transition: .6s;
+            /*transition效果若加在hover上，表示hover後才要出現，會在不同瀏覽器之間造成差異，故加在製作hover的元素上*/
+        }
+        .box-shadow:hover{
+            box-shadow: 15px 15px 8px teal;
+        }
+
+        .box-shadow2{
+            border-radius: 50%;
+            box-shadow: 30px 35px 30px khaki, 0px 35px 30px salmon;
+        }
+
+        .box-shadow3{
+            box-shadow:20px 20px 20px slategrey inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-shadow"></div>
+    <div class="box box-shadow2"></div>
+    <div class="box box-shadow3"></div>
+</body>
+</html>

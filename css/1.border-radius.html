@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius</title>
+    <style>
+        .boxmodule{
+            width: 200px;
+            height: 200px;
+            background-color: #faf;
+            float: left;
+            margin: 10px;
+        }
+        .box{
+            /* width: 200px;
+            height: 200px;
+            background-color: #faf; */
+            border-radius: 30px 10px 30px 10px;
+            /* float: left;
+            margin: 10px; */
+        }
+
+        .box2{
+            /* width: 200px;
+            height: 200px;
+            background-color: #faf; */
+            border-radius: 30px;
+            /* float: left;
+            margin: 10px; */
+        }
+
+        .box3{
+            border-radius: 100px 20px 30px;
+        }
+
+        .box4{
+            border-radius: 100px;
+        }
+        .box5{
+            border-radius: 100% 10% 10% 10%;
+        }
+        .box6{
+            border-radius: 100%;
+        }
+
+        .box7{
+            border-radius: 20px 40px/20px 80px;
+            background-color:#0ff;
+        }
+
+        .box8{
+            border-radius: 20px 20px 20px 40px/20px 60px 20px 80px; /*左上 右上 右下 左下/左上 右上 右下 左下*/
+            background-color:#0af;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxmodule box"></div>
+    <div class="boxmodule box2"></div>
+    <div class="boxmodule box3"></div>
+    <div class="boxmodule box4"></div>
+    <div class="boxmodule box5"></div>
+    <div class="boxmodule box6"></div>
+    <div class="boxmodule box7"></div>
+    <div class="boxmodule box8"></div>
+</body>
+</html>
